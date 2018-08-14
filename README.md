@@ -1,25 +1,25 @@
 ## How to build
 
-- Create build directory
+### Create build directory
 
 $ mkdir build
 
-- Go to build directory
+### Go to build directory
 
 $ cd build
 
-- Run cmake
+### Run cmake
 
 $ cmake ..
 
-- Run make
+### Run make
 
 $ make
 
-- List binary files
+### List binary files
 
 $ ls | grep .bin
 
-- Flash any binary file
+### Flash any binary file
 
 $ st-flash write <program>.bin 0x08000000
