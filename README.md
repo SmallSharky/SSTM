@@ -22,4 +22,4 @@ $ ls | grep .bin
 
 ### Flash any binary file
 
-$ st-flash write <program>.bin 0x08000000
+$ st-flash write program.bin 0x08000000
