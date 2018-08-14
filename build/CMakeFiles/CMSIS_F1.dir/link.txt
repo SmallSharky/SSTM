@@ -1,2 +1,0 @@
-/usr/bin/ar qc libCMSIS_F1.a  CMakeFiles/CMSIS_F1.dir/src/cmsis/f1/startup/startup_stm32f103xb.s.o CMakeFiles/CMSIS_F1.dir/src/cmsis/f1/registers/system_stm32f1xx.c.o
-/usr/bin/ranlib libCMSIS_F1.a

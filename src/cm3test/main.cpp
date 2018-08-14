@@ -1,14 +1,7 @@
 
-
-//#define STM32F103XB
-//#include "stm32f1xx.h"
-//#include <SSTM_GPIO.hpp>
+#include "main.h"
 #include <SSTM.hpp>
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-void delay(uint32_t ms);
 
 int main() {
   SSTM_GPIO gpio;
@@ -24,11 +17,3 @@ int main() {
   }
 }
 
-
-
-
-
-
-#ifdef __cplusplus
-}
-#endif
