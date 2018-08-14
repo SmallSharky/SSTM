@@ -1,0 +1,2 @@
+/usr/bin/ar qc libSSTM.a  CMakeFiles/SSTM.dir/src/SSTM/SSTM_GPIO.cpp.o CMakeFiles/SSTM.dir/src/SSTM/SSTM_SysTick.cpp.o CMakeFiles/SSTM.dir/src/SSTM/SSTM.cpp.o
+/usr/bin/ranlib libSSTM.a

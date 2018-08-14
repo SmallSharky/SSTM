@@ -1,0 +1,22 @@
+#include "stm32f1xx.h"
+
+#include "SSTM_GPIO.hpp"
+
+SSTM_GPIO::SSTM_GPIO()
+{
+  
+  
+}
+
+void SSTM_GPIO::init(){
+  RCC->APB2ENR |= RCC_APB2ENR_IOPCEN;
+  GPIOC->CRH |= GPIO_CRH_MODE13_0 | GPIO_CRH_MODE13_1;
+  GPIOC->CRH |= GPIO_CRH_MODE13_1;
+  GPIOC->CRH &= ~ ( ( GPIO_CRH_CNF13_0 ) | ( GPIO_CRH_CNF13_1 ) );
+  GPIOC->ODR = GPIO_ODR_ODR13;
+}
+
+void SSTM_GPIO::toggle()
+{
+  GPIOC->ODR ^= GPIO_ODR_ODR13;
+}

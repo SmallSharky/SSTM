@@ -1,0 +1,5 @@
+/home/sharky/projects/cm3test/build/CMakeFiles/rebuild_cache.dir
+/home/sharky/projects/cm3test/build/CMakeFiles/edit_cache.dir
+/home/sharky/projects/cm3test/build/CMakeFiles/SSTM.dir
+/home/sharky/projects/cm3test/build/CMakeFiles/CMSIS_F1.dir
+/home/sharky/projects/cm3test/build/CMakeFiles/cm3test.elf.dir
