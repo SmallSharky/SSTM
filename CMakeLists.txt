@@ -9,10 +9,3 @@ include(src/CMakeLists.txt)
 
 include(toolchain.cmake)
 
-
-add_definitions(
-    -DSTM32F103xB
-)
-
-
-
