@@ -19,7 +19,6 @@ set(
 
 
 add_library(
-  CMSIS_F1
-  ${CMSIS_F1_DIR}/startup/startup_stm32f103xb.s
-  ${CMSIS_F1_DIR}/registers/system_stm32f1xx.c
+   CMSIS
+   ${CMSIS_SRC}
 )

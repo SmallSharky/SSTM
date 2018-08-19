@@ -10,5 +10,9 @@ set(SRC_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src)
 
 
 include(${SRC_DIR}/SSTM/CMakeLists.txt)
-include(${SRC_DIR}/cm3test/CMakeLists.txt)
 include(${SRC_DIR}/cmsis/CMakeLists.txt)
+include(${SRC_DIR}/freertos/CMakeLists.txt)
+
+
+
+include(${SRC_DIR}/projects/CMakeLists.txt)
