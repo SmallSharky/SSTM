@@ -5,17 +5,18 @@
 
 
 int main() {
-  SSTM_Init();
+  SSTM_Init(); // Init SSTM library
   
-  SSTM_GPIO gpio('C');
-  gpio.setClock(true);
-  uint16_t led_pin = 0xffff;
-  gpio.setOutputPP(led_pin);
+  char LED_PORT = 'C'; // LED GPIO PORT (GPIOC)
+  uint16_t LED_PIN = 1<<13; // LED GPIO PIN (pin 13)
+  SSTM_GPIO gpio(LED_PORT); // USE LED's GPIO PORT
+  gpio.setClock(true); // Enable LED's GPIO clock
+  gpio.setOutputPP(LED_PIN); // Set LED's pin as PushPull output
   
   
   while ( 1 ) {
-    gpio.togglePins(led_pin);
-    SSTM_SysTick_Delay(200);
+    gpio.togglePins(LED_PIN); // Change state of LED pin
+    SSTM_SysTick_Delay(200); // Wait for 200 milliseconds
   }
 }
 
