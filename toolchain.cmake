@@ -2,7 +2,7 @@
 #set(CMAKE_SYSTEM_PROCESSOR arm)
 
 
-set(COMPILER_FLAGS "-mcpu=cortex-m3 -mthumb -Wall -Wno-unused-variable -Wstrict-aliasing -pedantic -Wunreachable-code -MD -g")
+set(COMPILER_FLAGS "${COMPILER_FLAGS} -mcpu=cortex-m3 -mthumb -Wall -Wno-unused-variable -Wstrict-aliasing -pedantic -Wunreachable-code -MD -g")
 set(LINKFLAGS "${LINKFLAGS} -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -Xlinker -lm -Wl,-Map=output.map -Wl,--gc-sections -Wl,--warn-once -g")
 
 
@@ -22,8 +22,8 @@ set(CMAKE_CXX_FLAGS ${COMPILER_FLAGS})
 set( CMAKE_SHARED_LIBRARY_LINK_C_FLAGS "${LINKFLAGS}  -specs=nano.specs -specs=nosys.specs" )
 set( CMAKE_SHARED_LIBRARY_LINK_CXX_FLAGS "${LINKFLAGS} -specs=nano.specs -specs=nosys.specs" )
 
-set(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
-set(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
-set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
-set(CMAKE_FIND_ROOT_PATH_MODE_PACKAGE ONLY)
+#set(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
+#set(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
+#set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
+#set(CMAKE_FIND_ROOT_PATH_MODE_PACKAGE ONLY)
 
