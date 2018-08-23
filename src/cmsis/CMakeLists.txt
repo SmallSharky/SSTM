@@ -10,3 +10,7 @@ else()
   message( FATAL_ERROR "Specify !correct! MCU family in mcu_select.cmake")
 endif()
 
+
+include_directories(
+  ${CMSIS_DIR}/cortex
+)

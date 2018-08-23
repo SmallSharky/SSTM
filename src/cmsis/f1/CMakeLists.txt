@@ -3,7 +3,6 @@ ENABLE_LANGUAGE(ASM)
 set(CMSIS_F1_DIR ${CMSIS_DIR}/f1)
 
 include_directories(
-  ${CMSIS_F1_DIR}/cortex
   ${CMSIS_F1_DIR}/registers
 )
 
