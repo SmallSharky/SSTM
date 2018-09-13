@@ -1,5 +1,5 @@
 
-set(MCU_FAMILY "F1")
+set(MCU_FAMILY "F4")
 
 
-set(MCU_SUBFAMILY "F103XB")
+set(MCU_SUBFAMILY "F407xx")
