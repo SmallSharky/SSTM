@@ -1,7 +1,9 @@
 #pragma once
 
-#include <stm32f103xb.h>
-
+//#include <stm32f103xb.h>
+//#include "stm32f4xx.h"
+//struct GPIO_TypeDef;
+#include "cmsis.h"
 class SSTM_GPIO{
 private:
   uint8_t _port_idx;
