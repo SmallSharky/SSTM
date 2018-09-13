@@ -9,7 +9,7 @@ set(
   SSTM_SRC
   
   ${SSTM_SRC}
-  ${SSTM_DIR}/SSTM_SysTick.cpp
+#  ${SSTM_DIR}/SSTM_SysTick.cpp
   ${SSTM_DIR}/SSTM.cpp
 )
 
@@ -22,6 +22,9 @@ endif(NOT MCU_FAMILY)
 
 if(MCU_FAMILY STREQUAL "F1")
   include(${SSTM_DIR}/f1/CMakeLists.txt)
+
+elseif(MCU_FAMILY STREQUAL "F4")
+  include(${SSTM_DIR}/f4/CMakeLists.txt)
 else()
   message( FATAL_ERROR "Specify !correct! MCU family in mcu_select.cmake")
 endif()
